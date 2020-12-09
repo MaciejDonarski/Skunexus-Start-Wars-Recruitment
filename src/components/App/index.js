@@ -1,3 +1,11 @@
-import Component from './App';
+import React from 'react';
 
-export default Component;
+import { BrowserRouter } from '@router/index';
+
+import './app.scss';
+
+export const App = () => (
+  <div className="app">
+    <BrowserRouter />
+  </div>
+);

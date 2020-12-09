@@ -28,3 +28,8 @@
 .gridActions button {
   margin: 0 5px;
 }
+
+// COMMENT Dont want to rewrite all file to scss so will just add extra class
+.is-number {
+  text-align: right;
+}
