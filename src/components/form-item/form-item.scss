@@ -1,0 +1,17 @@
+.form-item {
+  display: flex;
+  margin: 10px;
+
+  input {
+    width: 100%;
+  }
+
+  &__error {
+    color: red;
+    font-size: 12px;
+  }
+
+  &__label {
+    width: 50%;
+  }
+}

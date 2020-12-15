@@ -1,0 +1,23 @@
+.footer {
+  background: #141414;
+  color: white;
+  padding: 50px;
+  display: flex;
+
+  &__get-started {
+    flex: 1;
+    &__text {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__links {
+    flex: 1;
+
+    &__link {
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  }
+}

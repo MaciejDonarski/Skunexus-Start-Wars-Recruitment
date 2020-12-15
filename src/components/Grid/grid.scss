@@ -33,3 +33,9 @@
 .is-number {
   text-align: right;
 }
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 10px 10px;
+}

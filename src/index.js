@@ -3,8 +3,10 @@ import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
 import { store } from '@store/index';
 
-import { App } from './components/app';
+import { App } from './app';
 import reportWebVitals from './reportWebVitals';
+
+import './index.scss';
 
 // COMMENT didt create ui-kit componnets to reduce development time
 // Also there are no components around form stuff e.g. formGroup and so on

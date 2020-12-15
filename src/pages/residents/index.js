@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { Grid } from '@components/grid';
 
 import { getResidentsWithPlanet } from '@store/planets/planets.selectors';
+import { PageTitle, PageHeader } from '@components/ui-kit';
 
 import { GRID_HEADERS } from './constants';
 
@@ -18,7 +19,9 @@ export const ResidentsPage = () => {
 
   return (
     <div>
-      <h1>Residents Page</h1>
+      <PageHeader>
+        <PageTitle title="Residents" />
+      </PageHeader>
       <Grid data={data} />
     </div>
   );

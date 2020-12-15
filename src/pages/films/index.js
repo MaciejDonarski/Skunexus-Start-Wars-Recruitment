@@ -3,13 +3,16 @@ import { useSelector } from 'react-redux';
 import { Grid } from '@components/grid';
 
 import { getFilmsWithPlanet } from '@store/planets/planets.selectors';
+import { PageTitle, PageHeader } from '@components/ui-kit';
 
 import { GRID_HEADERS } from './contants';
 
-// COMMENT didnt do a wrapper for all pages (films, planest, residents)
-// in real project pages eg will have different filters, logic etc
-// so each pages logic is written in a separate component,
-// but in this case we could create wrapper
+// COMMENT just acrodint to the task,
+// takes only films from selected movie
+// not refetching
+// so in production in this case we would have
+// GET /films and GET /planets/1/films
+// which are respond with same dto
 export const FilmsPage = () => {
   const { films } = useSelector(getFilmsWithPlanet);
 
@@ -21,7 +24,9 @@ export const FilmsPage = () => {
 
   return (
     <div>
-      <h1>Films</h1>
+      <PageHeader>
+        <PageTitle title="Films: /planets/PLANET_ID/films (not realized in swapi :( ))" />
+      </PageHeader>
       <Grid data={data} />
     </div>
   );
